@@ -1,4 +1,4 @@
-﻿namespace DatabaseManager
+﻿namespace YourApp
 {
     //CLASS EXAMPLE FOR TABLE
     //REMEMBER - EXTEND CLASS WITH DataModel!

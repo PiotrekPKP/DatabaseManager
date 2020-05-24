@@ -1,1 +1,1 @@
-﻿namespace DatabaseManager { public class DataModel { } }
+﻿namespace YourApp { public class DataModel { } }

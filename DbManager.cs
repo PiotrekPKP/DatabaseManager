@@ -2,7 +2,7 @@
 using System.Linq;
 using MySql.Data.MySqlClient;
 
-namespace DatabaseManager
+namespace YourApp
 {
     public static class DbManager
     {
