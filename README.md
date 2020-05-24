@@ -32,7 +32,7 @@ namespace YourApp
 }
 ```
 
-Add SQL table support to DbManager.cs file. Replace "table_name" with your table's name, ExampleClass with class equivalent to your table and pass arguments casted properly (e.g. ```x[0].ToString``` and ```int.Parse(x[1].ToString())```).
+Add SQL table support to DbManager.cs file. Replace "table_name" with your table's name, ExampleClass with class equivalent to your table and pass arguments casted properly (e.g. ```x[0].ToString()``` and ```int.Parse(x[1].ToString())```).
 
 ```csharp
 "table_name" => result.AsEnumerable()
