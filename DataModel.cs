@@ -1,0 +1,1 @@
+﻿namespace DatabaseManager { public class DataModel { } }
