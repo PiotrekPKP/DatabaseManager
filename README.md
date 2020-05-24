@@ -12,6 +12,8 @@ Install-Package MySql.Data -Version 8.0.20
 
 ## Prepare project
 
+Rename all namespaces from ```YourApp``` to your app namespace.
+
 Create new class based on your SQL table. It should contain same properties as your table's columns (e.g. when your table has got ```id``` column and ```text``` column your class shoud have Id and Text properties). Remember to extend your class with DataModel.
 
 ```csharp
