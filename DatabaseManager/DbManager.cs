@@ -39,14 +39,6 @@ namespace DatabaseManager
             if (result.Rows.Count <= 0) return null;
             switch (result.ToString())
             {
-                //CODES TABLE EXAMPLE
-                case "codes":
-                    var objects = result.AsEnumerable().Select(
-                        x => new Codes(
-                            int.Parse(x[0].ToString()!),
-                            x[1].ToString())
-                    ).ToArray();
-                    return objects;
                 //TO ADD NEW DATABASE SUPPORT, USE THE FOLLOWING CODE
                 /*case "database_name":
                     var objects = result.AsEnumerable().Select(

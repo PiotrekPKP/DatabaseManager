@@ -5,7 +5,7 @@
         private static void Main(string[] args)
         {
             //INITIALIZING DATABASE CONNECTION
-            if (!DbManager.Initialize("localhost", "tests", "root", "")) return; //SERVER ERROR
+            if (!DbManager.Initialize("host", "dbname", "user", "password")) return; //SERVER ERROR
             
             //GETTING FROM TABLE EXAMPLE
             //((Codes)DbManager.Execute("SELECT * FROM codes")[i]).Code; //GIVES THE ith ITEM's Code PROPERTY
