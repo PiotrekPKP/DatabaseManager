@@ -39,8 +39,8 @@ namespace DatabaseManager
             if (result.Rows.Count <= 0) return null;
             switch (result.ToString())
             {
-                //TO ADD NEW DATABASE SUPPORT, USE THE FOLLOWING CODE
-                /*case "database_name":
+                //TO ADD NEW TABLE SUPPORT, USE THE FOLLOWING CODE
+                /*case "table_name":
                     var objects = result.AsEnumerable().Select(
                         x => new ExampleClass(
                             x[0] -> arg0,
