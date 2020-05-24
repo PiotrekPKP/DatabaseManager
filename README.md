@@ -2,7 +2,7 @@
 
 DatabaseManager is C# library for easy usage of MySQL databases.
 
-## Installation
+## Prepare packages
 
 Install Nuget [MySql.Data package](https://www.nuget.org/packages/MySql.Data/) for database connection.
 
