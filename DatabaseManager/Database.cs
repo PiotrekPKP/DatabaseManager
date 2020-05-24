@@ -8,7 +8,7 @@
             if (!DbManager.Initialize("host", "dbname", "user", "password")) return; //SERVER ERROR
             
             //GETTING FROM TABLE EXAMPLE
-            //((Codes)DbManager.Execute("SELECT * FROM codes")[i]).Code; //GIVES THE ith ITEM's Code PROPERTY
+            //((ExampleClass)DbManager.Execute("SELECT * FROM codes")[i]).Code; //GIVES THE ith ITEM's Code PROPERTY
             
             //INSERTING INTO TABLE EXAMPLE
             //DbManager.PerformAction("INSERT INTO codes VALUES ('id', 'code')"); //INSERTS id AND code INTO codes TABLE

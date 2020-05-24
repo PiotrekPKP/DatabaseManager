@@ -42,7 +42,7 @@ namespace DatabaseManager
                 //TO ADD NEW DATABASE SUPPORT, USE THE FOLLOWING CODE
                 /*case "database_name":
                     var objects = result.AsEnumerable().Select(
-                        x => new ClassName(
+                        x => new ExampleClass(
                             x[0] -> arg0,
                             x[1] -> arg1,
                             etc.
