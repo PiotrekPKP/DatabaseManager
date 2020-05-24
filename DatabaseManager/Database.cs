@@ -11,13 +11,13 @@
             //((ExampleClass)DbManager.Execute("SELECT * FROM codes")[i]).StringPropertyName; //GIVES THE ith ITEM's StringPropertyName PROPERTY
             
             //INSERTING INTO TABLE EXAMPLE
-            //DbManager.PerformAction("INSERT INTO codes VALUES ('id', 'code')"); //INSERTS id AND code INTO codes TABLE
+            //DbManager.PerformAction("INSERT INTO table VALUES ('valueOne', 'valueTwo')"); //INSERTS valueOne AND valueTwo INTO table TABLE
             
             //UPDATING TABLE VARIABLES EXAMPLE
-            //DbManager.PerformAction("UPDATE codes SET code='code' WHERE id='id'"); //UPDATES code VARIABLE IN codes TABLE WHERE id VARIABLE EQUALS id
+            //DbManager.PerformAction("UPDATE table SET valueOne='valueOne' WHERE valueTwo='valueTwo'"); //UPDATES valueOne VARIABLE IN table TABLE WHERE valueTwo VARIABLE EQUALS valueTwo
             
             //DELETING ROW FROM TABLE EXAMPLE
-            //DbManager.PerformAction("DELETE FROM codes WHERE id='id'"); //DELETES ROW FROM codes TABLE WHERE id VARIABLE EQUALS id
+            //DbManager.PerformAction("DELETE FROM table WHERE valueOne='valueOne'"); //DELETES ROW FROM table TABLE WHERE valueOne VARIABLE EQUALS valueOne
         }
     }
 }
