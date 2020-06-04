@@ -59,3 +59,13 @@ For inserting, updating or deleting data from table use:
 ```csharp
 DbManager.PerformAction(query);
 ```
+### Creating query
+
+Replace ```query``` with
+```csharp
+DbManager.CreateQuery(query, "@parameter", parameterValue);
+```
+Example
+```csharp
+DbManager.CreateQuery("SELECT * FROM table WHERE column=@value AND columnTwo=@valueTwo", "@value", value, "@valueTwo", valueTwo);
+```
