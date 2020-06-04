@@ -1,8 +1,10 @@
-﻿using System.Data;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using MySql.Data.MySqlClient;
 
-namespace YourApp
+namespace DatabaseManager
 {
     public static class DbManager
     {
@@ -31,9 +33,8 @@ namespace YourApp
         }
 
         //EXECUTING QUERIES AND RETURNING OBJECT ARRAY
-        public static DataModel[] Execute(string query)
+        public static IEnumerable<DataModel> Execute(MySqlCommand cmd)
         {
-            var cmd = new MySqlCommand(query, _connection);
             var result = new DataTable();
             result.Load(cmd.ExecuteReader());
             
@@ -64,6 +65,19 @@ namespace YourApp
             {
                 return false;
             }
+        }
+
+        public static MySqlCommand CreateCommand(string query, params string[] data)
+        {
+            var command = new MySqlCommand(query, _connection);
+            var prm = new List<MySqlParameter>();
+            for (var i = 0; i < data.Length / 2 + 1; i += 2)
+            {
+                prm.Add(new MySqlParameter(data[i], MySqlDbType.Text) {Value = data[i + 1]});
+            }
+            command.Parameters.AddRange(prm.ToArray());
+            
+            return command;
         }
     }
 }
