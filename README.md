@@ -12,6 +12,8 @@ Install-Package MySql.Data -Version 8.0.20
 
 ## Prepare project
 
+Rename all namespaces from ```YourApp``` to your app namespace.
+
 Create new class based on your SQL table. It should contain same properties as your table's columns (e.g. when your table has got ```id``` column and ```text``` column your class shoud have Id and Text properties). Remember to extend your class with DataModel.
 
 ```csharp
@@ -30,7 +32,7 @@ namespace YourApp
 }
 ```
 
-Add SQL table support to DbManager.cs file. Replace "table_name" with your table's name, ExampleClass with class equivalent to your table and pass arguments casted properly (e.g. ```x[0].ToString``` and ```int.Parse(x[1].ToString())```).
+Add SQL table support to DbManager.cs file. Replace "table_name" with your table's name, ExampleClass with class equivalent to your table and pass arguments casted properly (e.g. ```x[0].ToString()``` and ```int.Parse(x[1].ToString())```).
 
 ```csharp
 "table_name" => result.AsEnumerable()
