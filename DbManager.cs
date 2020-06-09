@@ -71,7 +71,7 @@ namespace DatabaseManager
         {
             var command = new MySqlCommand(query, _connection);
             var prm = new List<MySqlParameter>();
-            for (var i = 0; i < data.Length / 2 + 1; i += 2)
+            for (var i = 0; i < data.Length; i += 2)
             {
                 prm.Add(new MySqlParameter(data[i], MySqlDbType.Text) {Value = data[i + 1]});
             }
